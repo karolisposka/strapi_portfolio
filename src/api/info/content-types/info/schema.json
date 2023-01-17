@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infos",
+  "info": {
+    "singularName": "info",
+    "pluralName": "infos",
+    "displayName": "Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "richtext"
+    },
+    "skills": {
+      "type": "string"
+    }
+  }
+}

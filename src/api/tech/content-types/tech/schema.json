@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "techs",
+  "info": {
+    "singularName": "tech",
+    "pluralName": "techs",
+    "displayName": "techs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tech": {
+      "type": "string"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "teches"
+    },
+    "bios": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::bio.bio",
+      "mappedBy": "teches"
+    }
+  }
+}
